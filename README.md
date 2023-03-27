@@ -15,4 +15,4 @@ Rights - `chmod -R 660 /var/lib/rustdesk-server/` If you want to minimmize group
 
 Edit in your IP - `vim /usr/local/etc/rc.d/rustdesk-hbbs` modify the line with "rustdesk_hbbs_args:="-r x.y.v.w -k _"
 
-After he above you should be able to start them with `service onestart rustdesk-hbbs;service onestart rustdesk-hbbr` until you enable the service in /etc/rc.conf
+After all the above done, you should be able to start them with `service onestart rustdesk-hbbs;service onestart rustdesk-hbbr` until you enable the service in /etc/rc.conf
