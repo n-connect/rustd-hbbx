@@ -12,3 +12,7 @@ Running directory - `mkdir /var/lib/rustdesk-server` (Your certificates and data
 Ownership - `chown -R rustdesk:rustdesk /var/lib/rustdesk-server/`  
 
 Rights - `chmod -R 660 /var/lib/rustdesk-server/` If you want to minimmize group rights `640` should be ok as well
+
+Edit in your IP - `vim /usr/local/etc/rc.d/rustdesk-hbbs` modify the line with "rustdesk_hbbs_args:="-r x.y.v.w -k _"
+
+After he above you should be able to start them with `service onestart rustdesk-hbbs;service onestart rustdesk-hbbr` until you enable the service in /etc/rc.conf
